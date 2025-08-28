@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unlock Your Future at Eduvos | Study IT, Business, Psychology & more</title>
+  <meta name="description" content="Explore popular Eduvos degree programmes. See featured courses, why Eduvos stands out, and get started with a quick enquiry." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="Site header">
+    <div class="container header-row">
+      <a class="brand" href="#home" aria-label="Eduvos home">
+        <img src="eduvos logo.png" alt="Eduvos logo" class="brand-logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navList">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#why">Why Eduvos</a></li>
+          <li><a href="#apply">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Hero" >
+      <div class="container hero-inner">
+        <div class="hero-content" >
+        <h1 >Unlock Your Future at Eduvos</h1>
+        <p>Study degrees in IT, Business, Psychology, and more.</p>
+        <a class="btn" href="#courses">Explore Courses</a>
+        </div>
+      </div>
+    </section>
+
+<!-- ********** Courses section ******** -->
+    <section id="courses" class="section" aria-label="Featured courses">
+      <div class="container">
+        <header class="section-head">
+          <h2>Featured Degree Programmes</h2>
+          <p class="lead">Browse a few of our most popular options below.</p>
+        </header>
+
+        <div class="slider" data-slider>
+          <button class="nav-btn prev" aria-label="Previous" data-prev>&larr;</button>
+          <div class="slides" data-slides>
+            <article class="slide">
+              <div class="slide-text">
+                <h3>BSc Information Technology</h3>
+                <p class="desc">Build software, understand networks, and launch a future-proof career.</p>
+                <div class="meta">
+                  <span>Duration: 3 years</span>
+                  <span>Mode: Online / On Campus</span>
+                </div>
+              </div>
+              <div class="slide-media" aria-hidden="true"></div>
+            </article>
+            <article class="slide">
+              <div class="slide-text">
+                <h3>BCom Business Management</h3>
+                <p class="desc">Leadership, operations, and strategy for modern organisations.</p>
+                <div class="meta">
+                  <span>Duration: 3 years</span>
+                  <span>Mode: On Campus</span>
+                </div>
+              </div>
+              <div class="slide-media" aria-hidden="true"></div>
+            </article>
+            <article class="slide">
+              <div class="slide-text">
+                <h3>BA Design</h3>
+                <p class="desc">Blend creativity with digital design across web and print.</p>
+                <div class="meta">
+                  <span>Duration: 3 years</span>
+                  <span>Mode: Online / On Campus</span>
+                </div>
+              </div>
+              <div class="slide-media" aria-hidden="true"></div>
+            </article>
+            <article class="slide">
+              <div class="slide-text">
+                <h3>LLB Law</h3>
+                <p class="desc">Foundational legal principles with real-world application.</p>
+                <div class="meta">
+                  <span>Duration: 4 years</span>
+                  <span>Mode: On Campus</span>
+                </div>
+              </div>
+              <div class="slide-media" aria-hidden="true"></div>
+            </article>
+          </div>
+          <button class="nav-btn next" aria-label="Next" data-next>&rarr;</button>
+        </div>
+        <div class="dots" data-dots aria-label="Slide navigation"></div>
+      </div>
+    </section>
+
+    <!-- End Course section -->
+
+
+<!--**********  Why Eduvos *********** -->
+    <section id="why" class="section alt" aria-label="Why study at Eduvos">
+      <div class="container">
+        <header class="section-head">
+          <h2>Why Eduvos?</h2>
+        </header>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-emoji" aria-hidden="true">📍</div>
+            <h3>12 campuses nationwide</h3>
+            <p>Study close to home with a supportive community.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-emoji" aria-hidden="true">💻</div>
+            <h3>Flexible online learning</h3>
+            <p>Balance studies with work and life commitments.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-emoji" aria-hidden="true">✅</div>
+            <h3>Accredited degrees</h3>
+            <p>Qualifications recognised by industry and employers.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-emoji" aria-hidden="true">🎯</div>
+            <h3>Career-focused</h3>
+            <p>Practical skills and guidance to help you land roles.</p>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!-- End why Eduvos -->
+
+<!-- ************  The form Section     ************ -->
+    <section id="apply" class="section" aria-label="Application form">
+      <div class="container">
+        <header class="section-head">
+          <h2>Get Started Today</h2>
+          <p class="lead">Complete the form and we'll be in touch with more details.</p>
+        </header>
+
+        <form id="applyForm" class="form" novalidate>
+          <div class="grid-2">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+              <div class="error" data-error-for="fullName"></div>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <div class="error" data-error-for="email"></div>
+            </div>
+            <div class="field">
+              <label for="course">Course of Interest</label>
+              <select id="course" name="course" required>
+                <option value="">Select a course…</option>
+                <option>BSc Information Technology</option>
+                <option>BCom Business Management</option>
+                <option>BA Design</option>
+                <option>LLB Law</option>
+              </select>
+              <div class="error" data-error-for="course"></div>
+            </div>
+            <div class="field">
+              <fieldset class="radios">
+                <legend>Preferred Study Mode</legend>
+                <label><input type="radio" name="mode" value="Online" required /> Online</label>
+                <label><input type="radio" name="mode" value="On Campus" /> On Campus</label>
+                <label><input type="radio" name="mode" value="Hybrid" /> Hybrid</label>
+              </fieldset>
+              <div class="error" data-error-for="mode"></div>
+            </div>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn">Submit</button>
+            <span class="success" id="successMsg" role="status" aria-live="polite">Thanks! Your enquiry was received.</span>
+          </div>
+        </form>
+      </div>
+    </section>  
+    <!-- End form section -->
+  </main>
+
+    <!-- ******** Footer Section **********-->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-content">
+        <strong>Eduvos</strong>
+        <p>
+          Call: 011 690 1700<br />
+          Email: info@eduvos.com<br />
+          44 Alstation Road, Glen Austin,1685
+        </p>
+      </div>
+      <div class="footer-content">
+        <p>Connect with us</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/EduvosEducationSA/" aria-label="Facebook" title="Facebook"><img src="facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/eduvoseducation" aria-label="Instagram" title="Instagram"><img src="instagram.png" alt="instagram"></a>
+          <a href="https://www.linkedin.com/school/eduvos/posts/?feedView=all" aria-label="LinkedIn" title="LinkedIn"><img src="linked in.png" alt="LinkedIn"></a>
+          <a href="https://x.com/edu_vos" aria-label="X" title="X"><img src="x.png" alt="X"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Eduvos. All rights reserved.</div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="script.js"></script>
+</body>
+</html>

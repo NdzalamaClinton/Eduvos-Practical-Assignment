@@ -1,0 +1,422 @@
+:root {
+  --blue: #0c2e63;
+  --cyan: #26b4e6;
+  --text: #4d4d4f;
+  --bg: #ffffff;
+  --muted: #6b6b6d;
+  --border: #e7eaee;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: saturate(140%) blur(6px);
+  transition: box-shadow 0.2s ease;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brand-logo {
+  height: 56px;
+  width: auto;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav a:hover {
+  color: var(--blue);
+}
+.nav-toggle {
+  display: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px;
+}
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #333;
+  margin: 4px 0;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  color: #fff;
+  isolation: isolate;
+  
+      background: linear-gradient(to right, rgba(12,46,99,.8), rgba(12,46,99,.35)),
+              url("heroimage.avif") center/cover no-repeat;
+}
+
+
+
+.hero-inner {
+  padding: 96px 0 120px;
+}
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+}
+.hero p {
+  margin: 0 0 22px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  opacity: 0.95;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background: var(--cyan);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+}
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+/* Sections */
+.section {
+  padding: 64px 0;
+}
+.section-head {
+  margin-bottom: 16px;
+}
+.section h2 {
+  margin: 0 0 6px;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: var(--blue);
+}
+.lead {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 26px;
+}
+.slide-text h3 {
+  margin: 0 0 6px;
+}
+.slide .desc {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+.meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+.meta span {
+  background: #f6f8fb;
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+.slide-media {
+  min-height: 220px;
+  border-radius: 14px;
+ 
+    background: linear-gradient(to right, rgba(12,46,99,.8), rgba(12,46,99,.35)),
+              url("heroimage.avif") center/cover no-repeat;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.prev {
+  left: 12px;
+}
+
+.next {
+  right: 12px;
+}
+.dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 14px 0 0;
+}
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #cfd9e3;
+  cursor: pointer;
+}
+.dots button.is-active {
+  background: var(--blue);
+}
+
+/* Why choose Eduvos */
+.alt {
+  background: #f9fbff;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.why-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+.why-emoji {
+  font-size: 28px;
+}
+.why-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1.05rem;
+}
+.why-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Form Section */
+.form {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.field label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+}
+.radios {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.radios legend {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.radios label {
+  margin-right: 12px;
+}
+.actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.error {
+  color: #b42318;
+  font-size: 0.95rem;
+  margin-top: 4px;
+  min-height: 1.2em;
+}
+.success {
+  display: none;
+  padding: 10px 14px;
+  background: #e7f7ef;
+  border: 1px solid #bfe8cf;
+  color: #0f5132;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+  background: #071a3a;
+  color: #dfe7f6;
+}
+.footer-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  padding: 34px 0;
+}
+
+/* .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+} */
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+
+.socials a {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #0e2a5a;
+  border: 1px solid #13356c;
+  color: #e6eeff;
+  text-decoration: none;
+  /* font-size: 0; */
+}
+.copy {
+  text-align: center;
+  border-top: 1px solid #0e2a5a;
+  padding: 14px 20px;
+  color: #aab8d6;
+  font-size: 0.95rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+  .slide {
+    grid-template-columns: 1fr;
+  }
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-row {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .main-nav ul {
+    position: fixed;
+    right: 16px;
+    top: 72px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px;
+    display: none;
+    box-shadow: var(--shadow);
+  }
+  .main-nav ul.is-open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+
+/* removing global padding */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space/padding for header items */
+  header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Space for hero text */
+  .hero-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Footer: keep background full, only pad inside */
+  footer .footer-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
